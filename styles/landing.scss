@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 #root {
@@ -46,7 +47,7 @@ html {
 }
 
 .header {
-  position: relative;
+  position: fixed;
   align-items: center;
   box-sizing: border-box;
   border: 2px solid red;
@@ -65,23 +66,28 @@ html {
     font-size: $font-menu;
     padding-left: 10px;
     text-align: right;
-    width: 100%;
+    width: auto;
     top: 50%;
-    left: 15%;
+    left: 25%;
     transform: translate(0, -50%);
     border: 2px solid rgba(255, 0, 0, 0.466);
   }
 
   &__menu-list {
     float: left;
-    max-width: 125px;
+    width: auto;
     border: 2px solid rgba(255, 0, 0, 0.267);
-    padding: 10px;
+    padding: 20px;
+  }
+  &__menu-list:nth-child(2) {
+    padding-left: 50px;
   }
 
   &__menu-item {
     display: $display-inline;
     float: left;
+    border: 2px solid #616161;
+    padding: 0 10px;
   }
 
   &__menu-item img {
@@ -93,19 +99,20 @@ html {
 
 .logo {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 90px;
   height: 55px;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  border: 2px solid #fff;
 
-  &__image {
+  /*  &__image {
     position: absolute;
     width: 90px;
     height: 55px;
     top: 50%;
     left: 50%;
-  }
+  } */
 }
 
 .main {
