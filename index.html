@@ -85,12 +85,12 @@
           <ul class="header__menu-list">
             <li class="header__menu-item">
               <a href="#">
-                <img src="./images/icon-profile.svg" alt="profile" />
+                <img src="./images/icon-search.svg" alt="search" />
               </a>
             </li>
             <li class="header__menu-item">
               <a href="#">
-                <img src="./images/icon-search.svg" alt="search" />
+                <img src="./images/icon-profile.svg" alt="profile" />
               </a>
             </li>
           </ul>
@@ -98,55 +98,59 @@
       </header>
       <div class="wrapper">
         <main class="main">
-          <aside class="aside-left">
-            <div class="topic">
-              <h2 class="topic__article">Norway</h2>
-              <p class="topic__text">
-                The homeland of the Vikings, Norway invites you to enjoy the
-                harsh northern romance: sail on a fjord cruise, stand under the
-                northern lights and take a walk in melancholic Oslo
-              </p>
-              <div class="btn">
-                <a href="#" class="btn__text">Book a tour</a>
-              </div>
-              <div class="social">
-                <ul class="social__list">
-                  <li class="social__item">
-                    <a href="#">
-                      <img src="./images/icon-twitter.svg" alt="Twitter" />
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#">
-                      <img src="./images/icon-fecebook.svg" alt="Facebook" />
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#">
-                      <img src="./images/icon-telegram.svg" alt="Telegram" />
-                    </a>
-                  </li>
-                  <li class="social__item">
-                    <a href="#">
-                      <img src="./images/icon-youtube.svg" alt="Youtube" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div class="topic">
+            <h2 class="topic__article">Norway</h2>
+            <p class="topic__text">
+              The homeland of the Vikings, Norway invites you to enjoy the harsh
+              northern romance: sail on a fjord cruise, stand under the northern
+              lights and take a walk in melancholic Oslo
+            </p>
+            <div class="btn">
+              <a href="#" class="btn__text">Book a tour</a>
             </div>
-          </aside>
-          <aside class="aside-right">
-            <div class="slider">
-              <img src="./images/img-slide-1.png" alt="" />
-              <img src="./images/img-slide-2.png" alt="" />
-              <img src="./images/img-slide-3.png" alt="" />
+            <div class="social">
+              <ul class="social__list">
+                <li class="social__item">
+                  <a href="#">
+                    <img src="./images/icon-twitter.svg" alt="Twitter" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <img src="./images/icon-fecebook.svg" alt="Facebook" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <img src="./images/icon-telegram.svg" alt="Telegram" />
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#">
+                    <img src="./images/icon-youtube.svg" alt="Youtube" />
+                  </a>
+                </li>
+              </ul>
             </div>
-          </aside>
+          </div>
         </main>
+        <aside class="aside-right">
+          <div class="slider">
+            <img src="./images/img-slide-1.png" alt="" />
+            <img src="./images/img-slide-2.png" alt="" />
+            <img src="./images/img-slide-3.png" alt="" />
+          </div>
+        </aside>
       </div>
     </main>
 
     <!-- Application main script: -->
+    <script>
+      function go() {
+        alert("Hi");
+      }
+      var myList = ["apples", 12, go];
+    </script>
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

@@ -44,6 +44,7 @@ html {
   height: 100vh;
   box-sizing: border-box;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
@@ -72,22 +73,47 @@ html {
     transform: translate(0, -50%);
     border: 2px solid rgba(255, 0, 0, 0.466);
   }
+  @media screen and (max-width: 1330px) {
+    .header {
+      &__menu {
+        top: 0;
+        left: 50%;
+        transform: translate(0, 33%);
+      }
+
+      &__menu-list {
+        float: none;
+        display: table-caption;
+        padding: 0 20px;
+        margin: 0 0 20px;
+      }
+
+      &__menu-item {
+        transform: translate(-50%, 0);
+      }
+    }
+    main {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .logo {
+      left: 50%;
+    }
+  }
 
   &__menu-list {
-    float: left;
     width: auto;
+    float: left;
     border: 2px solid rgba(255, 0, 0, 0.267);
     padding: 20px;
-  }
-  &__menu-list:nth-child(2) {
-    padding-left: 50px;
   }
 
   &__menu-item {
     display: $display-inline;
     float: left;
     border: 2px solid #616161;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
   &__menu-item img {
@@ -105,39 +131,16 @@ html {
   left: 10%;
   transform: translateY(-50%);
   border: 2px solid #fff;
-
-  /*  &__image {
-    position: absolute;
-    width: 90px;
-    height: 55px;
-    top: 50%;
-    left: 50%;
-  } */
 }
 
 .main {
   position: relative;
   display: inline-block;
-  top: 0;
+  top: 20%;
   left: 0;
   border: 2px solid blue;
-  width: 100%;
-  max-height: 900px;
-}
-
-/* Left side */
-.aside-left {
-  position: relative;
   width: 70%;
-  float: left;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  padding: 0 20px 0;
-  margin: 15% 0 0;
-  box-sizing: border-box;
-  border: 2px solid rgba(200, 255, 0, 0.65);
+  max-height: 900px;
 }
 
 .topic {
@@ -180,21 +183,22 @@ html {
 
 /* Right side */
 .aside-right {
-  position: relative;
+  position: absolute;
   width: 30%;
-  height: 100%;
-  float: right;
+  height: auto;
   top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   padding: 0 20px 0;
-  margin: 15% 0 0;
-  box-sizing: border-box;
+  margin: 9% 0 0;
   border: 2px solid rgba(255, 0, 221, 0.753);
+  background: rgba(245, 249, 255, 0.15);
+  backdrop-filter: blur(4px);
 }
 
 .slider {
   height: auto;
+  margin: 20% 0;
 }
 .slider > img {
   display: block;
