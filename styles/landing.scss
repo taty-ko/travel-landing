@@ -92,7 +92,8 @@ html {
         transform: translate(-50%, 0);
       }
     }
-    main {
+    .main {
+      top: 40%;
       display: block;
       margin: 0 auto;
     }
